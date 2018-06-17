@@ -46,11 +46,13 @@ app
     })
     .get('/about', (req, res) => {
         res.render('about.hbs', {
-            pageTitle: 'About Page',
+            pageTitle: 'About Page'
         });
     })
     .get('/projects', (req,res) => {
-        res.render('projects.hbs')
+        res.render('projects.hbs', {
+            pageTitle: 'Projects Page'
+        });
     })
     .get('/bad', (req, res) => {
         res.send({
